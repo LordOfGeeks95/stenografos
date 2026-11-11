@@ -1,0 +1,5 @@
+# Εκδόσεις που δοκιμάστηκαν μαζί (Python 3.12, Windows).
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+av==19.0.1
+huggingface-hub==2.2.0

@@ -1,9 +1,11 @@
-# Λεξιλόγιο (προαιρετικό): ένας όρος ανά γραμμή, οι πιο σημαντικοί πρώτοι.
-# Βάλε εδώ ονόματα (καθηγητών, τόπων) και ειδικούς όρους που βγαίνουν λάθος στα κείμενα.
-# Το μοντέλο τα «βλέπει» πριν ξεκινήσει και τα γράφει πιο σωστά.
-# Χωράνε περίπου 40-50 όροι. Οι γραμμές με # αγνοούνται.
+# Vocabulary (optional): one term per line, the most important first.
+# Put here names (people, places) and special terms that come out wrong in the transcripts.
+# The model "sees" them before it starts and writes them more correctly.
+# About 40-50 terms fit. Lines starting with # are ignored.
 #
-# Παράδειγμα (σβήσε το # μπροστά για να ενεργοποιηθούν):
-# Παπαδόπουλος
-# φωτοσύνθεση
+# Λεξιλόγιο (προαιρετικό): ονόματα και ειδικοί όροι που βγαίνουν λάθος, ένας ανά γραμμή.
+#
+# Example / Παράδειγμα (remove the # in front to activate them / σβήσε το # μπροστά):
+# Papadopoulos
+# photosynthesis
 # Πανεπιστήμιο Πατρών

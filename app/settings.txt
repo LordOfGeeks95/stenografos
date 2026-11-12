@@ -1,26 +1,38 @@
-# Ρυθμίσεις του Greek Speech To Text (By Nikitas Katsaitis)
-# Μορφή: κλειδί = τιμή. Οι γραμμές που ξεκινούν με # είναι σχόλια.
-# Αν αλλάξεις κάτι και χαλάσει, σβήσε την τιμή: το πρόγραμμα παίρνει την προεπιλογή.
+﻿# Stenografos (By Nikitas Katsaitis) - settings / ρυθμίσεις
+# Format: key = value. Lines starting with # are comments.
+# If you change something and it breaks, delete the value: the program uses the default.
+# (Αν αλλάξεις κάτι και χαλάσει, σβήσε την τιμή: το πρόγραμμα παίρνει την προεπιλογή.)
 
-# Μοντέλο: large-v3 (καλύτερο, ~3 GB) · large-v3-turbo (πιο γρήγορο, λίγο λιγότερο ακριβές)
-#          medium / small (για αδύναμους υπολογιστές, χειρότερα ελληνικά)
-# Αν το αλλάξεις, το νέο μοντέλο κατεβαίνει αυτόματα την επόμενη φορά (θέλει ίντερνετ).
+# Language of the messages: auto (= Greek if Windows or its regional format is Greek, else English) · en · el
+ui_language = auto
+
+# Model: large-v3 (best, ~3 GB) · large-v3-turbo (faster, slightly less accurate)
+#        medium / small (for weak computers, lower quality)
+# If you change it, the new model is downloaded automatically next time (needs internet).
 model = large-v3
 
-# Γλώσσα: el = ελληνικά · en = αγγλικά · άδειο = αυτόματη αναγνώριση
-language = el
+# Language of the recordings:
+#   auto   = Greek if Windows (or its regional format) is Greek, otherwise automatic detection
+#   detect = always automatic detection
+#   el, en, de, fr, es, it ... = always this language (a bit more accurate than detection)
+language = auto
 
-# Πού θα σώζονται τα κείμενα. Άδειο = ο φάκελος Transcripts δίπλα στο πρόγραμμα.
-# Παράδειγμα: output_folder = D:\Σχολή\Απομαγνητοφωνήσεις
+# Where the transcripts are saved. Empty = the Transcripts folder next to the program.
+# Example: output_folder = D:\Documents\Transcripts
 output_folder =
 
-# auto = κάρτα γραφικών NVIDIA αν υπάρχει, αλλιώς επεξεργαστής · cpu = μόνο επεξεργαστής
+# auto = NVIDIA graphics card if there is one, otherwise processor · cpu = processor only
 device = auto
 
-# Μια πρόταση που περιγράφει την ηχογράφηση. Βοηθάει λίγο το μοντέλο.
-# Παράδειγμα: prompt = Συνάντηση της ομάδας για τον προϋπολογισμό του έργου.
-prompt = Ηχογράφηση στα ελληνικά.
+# Processor threads (only when it runs on the processor). auto = all the real cores
+# (hyper-threading "twins" don't make it faster).
+cpu_threads = auto
 
-# Στο τέλος: άνοιγμα του φακέλου με τα κείμενα (yes/no) και ειδοποίηση με ήχο (yes/no)
+# A sentence that describes the recording, in its language. Helps the model a little.
+# Empty = «Ηχογράφηση στα ελληνικά.» for Greek, nothing for other languages.
+# Example: prompt = Team meeting about the project budget.
+prompt =
+
+# At the end: open the transcripts folder (yes/no) and a notification with sound (yes/no)
 open_folder_when_done = yes
 notification = yes

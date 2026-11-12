@@ -1,4 +1,4 @@
-# Βιβλιοθήκες NVIDIA CUDA για την κάρτα γραφικών (μπαίνουν μόνο αν βρεθεί κάρτα NVIDIA).
+# NVIDIA CUDA libraries for the graphics card (installed only when an NVIDIA card is found).
 nvidia-cublas-cu12==12.9.2.10
 nvidia-cudnn-cu12==9.27.0.42
 nvidia-cuda-nvrtc-cu12==12.9.86

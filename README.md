@@ -5,7 +5,7 @@
 **Turns your recordings into text, locally on your own computer.**
 Free, no account, no limits, and your files never leave your PC.
 
-*Stenografos* (Στενογράφος) is Greek for *stenographer*: the person who writes down everything that is said.
+*Stenografos* (Στενογράφος) is Greek for **stenographer**: the person who records speech word for word, as fast as it is spoken.
 
 ---
 
